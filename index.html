@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Interactive pricing component</title>
+        <script type="module" src="app.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="background">
+            <img src="/images/bg-pattern.svg" alt="" />
+            <img class="circles" src="/images/pattern-circles.svg" alt="" />
+        </div>
+
+        <div class="container">
+            <main>
+                <section class="heading">
+                    <h1>Simple, traffic-based pricing</h1>
+                    <p>
+                        Sign-up for our 30-day trial. No credit card required.
+                    </p>
+                </section>
+
+                <section class="card">
+                    <div class="card__top">
+                        <div class="slider-wrapper">
+                            <p><span id="pageviews"></span> Pageviews</p>
+                            <input
+                                class="slider"
+                                type="range"
+                                name=""
+                                step="25"
+                            />
+
+                            <h2>
+                                $<span id="price"></span>
+                                <span id="period">/ month</span>
+                            </h2>
+                        </div>
+
+                        <div class="toggle">
+                            <p>Monthly Billing</p>
+
+                            <div class="toggle-wrapper">
+                                <input
+                                    type="checkbox"
+                                    name="toggle"
+                                    id="toggle"
+                                    tabindex="0"
+                                />
+                                <div class="ball"></div>
+                            </div>
+
+                            <p>Yearly Billing</p>
+                            <small class="discount">
+                                <span class="mobile">-</span>
+                                <span class="discount-amount"> 25% </span>
+                                <span class="desktop">discount</span>
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul>
+                            <li>
+                                <img src="/images/icon-check.svg" alt="" />
+                                Unlimited websites
+                            </li>
+                            <li>
+                                <img src="/images/icon-check.svg" alt="" /> 100%
+                                data ownership
+                            </li>
+                            <li>
+                                <img src="/images/icon-check.svg" alt="" />Email
+                                reports
+                            </li>
+                        </ul>
+                        <button>Start my trial</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
