@@ -260,6 +260,12 @@ main {
             }
         }
     }
+
+    .slider {
+        &::-webkit-slider-thumb {
+            box-shadow: 0 4px 25px -1px var(--strong-cyan);
+        }
+    }
 }
 
 .toggle-wrapper {
@@ -343,7 +349,8 @@ main {
             center;
         border-radius: 100%;
         cursor: pointer;
-        box-shadow: 0 4px 25px -1px var(--strong-cyan);
+        position: relative;
+        z-index: 1;
     }
 
     &:hover::-webkit-slider-thumb {
