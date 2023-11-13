@@ -325,6 +325,7 @@ main {
     border-radius: 8px;
     outline-offset: 2px;
     position: relative;
+    cursor: grab;
 
     &::before {
         position: absolute;
@@ -348,7 +349,6 @@ main {
         background: var(--strong-cyan) url(/images/icon-slider.svg) no-repeat
             center;
         border-radius: 100%;
-        cursor: pointer;
         position: relative;
         z-index: 1;
     }

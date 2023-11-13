@@ -23,7 +23,7 @@ function render() {
 }
 render();
 
-toggle.addEventListener("change", (event) => {
+toggle.addEventListener("change", () => {
     isMonthlyBilling = !isMonthlyBilling;
 
     if (isMonthlyBilling) {
